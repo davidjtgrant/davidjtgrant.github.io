@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>{{ page.title }}</title>
+			<meta name="keywords" content="david grant, david,grant,toronto,data scientist">
+			<!-- styles -->
+			<link href="/css/bootstrap.css" rel="stylesheet">
+			<link href="/css/jumbotron-narrow.css" rel="stylesheet">
+			<link href="/css/style.css" rel="stylesheet">
+			{% include analytics.html %}
+		</head>
+
+		<body>
+			<div class="container">	
+				<div class="header">
+					<ul class="nav nav-pills pull-right">
+						<li class="{{ page.cv }}"><a href="/cv" title="CV">CV</a></li>
+						<li class="{{ page.contact }}"><a href="/contact" title="Contact">Contact</a></li>
+					</ul>
+					<h3 class="text-muted"><a href="/">David Grant</a></h3>
+				</div> <!-- /header -->
+
+				{{ content }}
+
+					
+				<div class="footer">
+					<div class="row">
+						<div class="col-sm-8">
+							<p><small>&copy; 2020 David Grant - Toronto</small></p>
+						</div>
+						<div class="col-sm-4">
+							<p class="pull-right"><small><a href="/about" title="About this site">About this site</a></small></p>
+						</div>
+					</div>
+				</div> <!-- /footer -->
+			</div> <!-- /container -->
+		</body>
+		
+		
+	</html>
